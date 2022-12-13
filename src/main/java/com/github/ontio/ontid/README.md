@@ -45,7 +45,7 @@ Proof.type: an instance of `PubKeyType`;
 
 ProofPurpose: only use `assertionMethod` at currently;
 
-Proof.verificationMethod: pubkey uri, like:`did:ont:AVe4zVZzteo6HoLpdBwpKNtDXLjJBzB9fv#keys-2`;
+Proof.verificationMethod: pubkey uri, like:`did:cnc:AVe4zVZzteo6HoLpdBwpKNtDXLjJBzB9fv#keys-2`;
 
 Proof.hex: hex-encoded ontology signature;
 

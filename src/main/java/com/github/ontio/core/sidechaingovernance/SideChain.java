@@ -47,8 +47,8 @@ public class SideChain implements Serializable {
         map.put("address", this.address.toBase58());
         map.put("ratio", this.ratio);
         map.put("deposit", this.deposit);
-        map.put("ongNum", this.ongNum);
-        map.put("ongPool", this.ongPool);
+        map.put("ccgNum", this.ongNum);
+        map.put("ccgPool", this.ongPool);
         map.put("status", this.status);
         return JSON.toJSONString(map);
     }

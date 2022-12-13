@@ -166,18 +166,18 @@ String ddo = ontSdk.nativevm().ontId().sendGetDDO(ontid);
 		"Value": "value1",
 		"Key": "key1"
 	}],
-	"OntId": "did:ont:TA5UqF8iPqecMdBzTdzzANVeY8HW1krrgy",
+	"OntId": "did:cnc:TA5UqF8iPqecMdBzTdzzANVeY8HW1krrgy",
 	"Recovery": "TA6AhqudP1dcLknEXmFinHPugDdudDnMJZ",
 	"Owners": [{
 		"Type": "ECDSA",
 		"Curve": "P256",
 		"Value": "12020346f8c238c9e4deaf6110e8f5967cf973f53b778ed183f4a6e7571acd51ddf80e",
-		"PubKeyId": "did:ont:TA5UqF8iPqecMdBzTdzzANVeY8HW1krrgy#keys-1"
+		"PubKeyId": "did:cnc:TA5UqF8iPqecMdBzTdzzANVeY8HW1krrgy#keys-1"
 	}, {
 		"Type": "ECDSA",
 		"Curve": "P256",
 		"Value": "1202022fabd733d7d7d7009125bfde3cb0afe274769c78fd653079ecd5954ae9f52644",
-		"PubKeyId": "did:ont:TA5UqF8iPqecMdBzTdzzANVeY8HW1krrgy#keys-2"
+		"PubKeyId": "did:cnc:TA5UqF8iPqecMdBzTdzzANVeY8HW1krrgy#keys-2"
 	}]
 }
 ```

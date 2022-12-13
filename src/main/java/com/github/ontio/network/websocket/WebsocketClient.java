@@ -373,7 +373,7 @@ public class WebsocketClient extends AbstractConnector {
     @Override
     public String getGrantOng(String address) throws ConnectorException, IOException {
         Map map = new HashMap<>();
-        map.put("Action", "getgrantong");
+        map.put("Action", "getgrantccg");
         map.put("Version", "1.0.0");
         map.put("Id", generateReqId());
         map.put("Addr", address);

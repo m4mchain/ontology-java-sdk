@@ -26,7 +26,7 @@ public class OngXDemo {
 
         String password = "111111";
         Account account = sdk.getWalletMgr().getAccount("AHX1wzvdw9Yipk7E9MuLY4GGX4Ym9tHeDe",password);
-        Identity identity = sdk.getWalletMgr().getWallet().getIdentity("did:ont:Abrc5byDEZm1CnQb3XjAosEt34DD4w5Z1o");
+        Identity identity = sdk.getWalletMgr().getWallet().getIdentity("did:cnc:Abrc5byDEZm1CnQb3XjAosEt34DD4w5Z1o");
         String sideChainContractAddr = "0000000000000000000000000000000000000008";
 //        ongX.setRpcUrl(sideChainUrl, "rpc");
         if(false){
@@ -38,7 +38,7 @@ public class OngXDemo {
         //梦航
 //        Account adminOntIdAcct = getAccount("cCQnie0Dd8aQPyY+9UBFw2x2cLn2RMogKqhM8OkyjJNrNTvlcVaYGRENfy2ErF7Q","passwordtest","ARiwjLzjzLKZy8V43vm6yUcRG9b56DnZtY","3e1zvaLjtVuPrQ1o7oJsQA==");
 //        String adminPrivateKey =Helper.toHexString(adminOntIdAcct.serializePrivateKey());
-        Identity adminIndentity = sdk.getWalletMgr().getWallet().getIdentity("did:ont:ARiwjLzjzLKZy8V43vm6yUcRG9b56DnZtY");
+        Identity adminIndentity = sdk.getWalletMgr().getWallet().getIdentity("did:cnc:ARiwjLzjzLKZy8V43vm6yUcRG9b56DnZtY");
         //梦航
         Account account1 = getAccount("wR9S/JYwMDfCPWFGEy5DEvWfU14k9suZuL4+woGtfhZJf5+KyL9VJqMi/wGTOd1i","passwordtest","AZqk4i7Zhfhc1CRUtZYKrLw4YTSq4Y9khN","ZaIL8DxNaQ91fkMHAdiBjQ==");
         Account account2 = getAccount("PCj/a4zUgYnOBNZUVEaXBK61Sq4due8w2RUzrumO3Bm0hZ/3v4mlDiXYYvmmBZUk","passwordtest","ARpjnrnHEjXhg4aw7vY6xsY6CfQ1XEWzWC","wlz1h439j0GwsWhGBByMxg==");

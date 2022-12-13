@@ -33,11 +33,11 @@ public class OntId2Demo {
     public static void testCred(OntSdk ontSdk) throws Exception {
         Account payer = ontSdk.getWalletMgr().getAccount("AUNB7xQuBVg8hnRfVz9pyAuZQUqPBiDxDF", password);
         Identity issuerIdentity = ontSdk.getWalletMgr().getWallet().getIdentity(
-                "did:ont:AJ4C9aTYxTGUhEpaZdPjFSqCqzMCqJDRUd");
+                "did:cnc:AJ4C9aTYxTGUhEpaZdPjFSqCqzMCqJDRUd");
         Account issuerSigner = ontSdk.getWalletMgr().getAccount(issuerIdentity.ontid, password,
                 issuerIdentity.controls.get(0).getSalt());
         Identity ownerIdentity = ontSdk.getWalletMgr().getWallet().getIdentity(
-                "did:ont:AVe4zVZzteo6HoLpdBwpKNtDXLjJBzB9fv");
+                "did:cnc:AVe4zVZzteo6HoLpdBwpKNtDXLjJBzB9fv");
 //            String issuerRegTx = ontSdk.nativevm().ontId().sendAddPubKey(issuerIdentity.ontid, payer,
 //                    issuerSigner.serializePublicKey(), "", payer, gasLimit, gasPrice);
 //            System.out.println("issuerRegTx: " + issuerRegTx);
@@ -63,7 +63,7 @@ public class OntId2Demo {
         credential.expirationDate = formatter.format(expiration);
         String noSubjectCred = JSON.toJSONString(credential);
         System.out.println("noSubjectCred: " + noSubjectCred);
-        ExampleCredentialSubject credentialSubject = new ExampleCredentialSubject("did:ont:111111",
+        ExampleCredentialSubject credentialSubject = new ExampleCredentialSubject("did:cnc:111111",
                 "Bob", "Alice");
         credential.credentialSubject = new ExampleCredentialSubject[]{credentialSubject};
         // generate a sign request
@@ -110,7 +110,7 @@ public class OntId2Demo {
         }
         // create other VerifiableCredential to create presentation
         ExampleIssuer exampleIssuer = new ExampleIssuer(issuerIdentity.ontid, "issuer");
-        ExampleCredentialSubject otherCredentialSubject = new ExampleCredentialSubject("did:ont:111111",
+        ExampleCredentialSubject otherCredentialSubject = new ExampleCredentialSubject("did:cnc:111111",
                 "he", "she");
         VerifiableCredential verifiableCredential2 = issuer.createCred(credential.context, credential.type,
                 exampleIssuer, new ExampleCredentialSubject[]{otherCredentialSubject}, expiration,

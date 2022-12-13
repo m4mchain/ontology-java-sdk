@@ -118,7 +118,7 @@ public class OngX {
 
     public String unboundOng(String address) throws Exception {
         if (address != null && !address.equals("")) {
-            String unboundOngStr = sdk.getSideChainConnectMgr().getAllowance("ong", Address.parse("0000000000000000000000000000000000000001").toBase58(), address);
+            String unboundOngStr = sdk.getSideChainConnectMgr().getAllowance("ccg", Address.parse("0000000000000000000000000000000000000001").toBase58(), address);
             long unboundOng = Long.parseLong(unboundOngStr);
             return unboundOngStr;
         } else {
@@ -202,7 +202,7 @@ public class OngX {
         }
         list.add(struct);
         byte[] args = NativeBuildParams.createCodeParamsScript(list);
-        Transaction tx = sdk.vm().buildNativeParams(new Address(Helper.hexToBytes(ongXContract)),"ongSwap",args,payer.getAddressU160().toBase58(),gaslimit, gasprice);
+        Transaction tx = sdk.vm().buildNativeParams(new Address(Helper.hexToBytes(ongXContract)),"ccgSwap",args,payer.getAddressU160().toBase58(),gaslimit, gasprice);
         sdk.addSign(tx, account);
         sdk.getSideChainConnectMgr().sendRawTransaction(tx.toHexString());
         return tx.hash().toHexString();
@@ -229,7 +229,7 @@ public class OngX {
         struct.add(swap.address, swap.value);
         list.add(struct);
         byte[] args = NativeBuildParams.createCodeParamsScript(list);
-        Transaction tx = sdk.vm().buildNativeParams(new Address(Helper.hexToBytes(ongXContract)),"ongxSwap",args,payer.getAddressU160().toBase58(),gaslimit, gasprice);
+        Transaction tx = sdk.vm().buildNativeParams(new Address(Helper.hexToBytes(ongXContract)),"ccgxSwap",args,payer.getAddressU160().toBase58(),gaslimit, gasprice);
         sdk.addSign(tx, account);
         sdk.getSideChainConnectMgr().sendRawTransaction(tx.toHexString());
         return tx.hash().toHexString();

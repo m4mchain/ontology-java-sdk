@@ -133,7 +133,7 @@ namespace Example
         }
 
         //the admin ONT ID of this contract must be hardcoded.
-        public static readonly byte[] adminOntID = "did:ont:AazEvfQPcQ2GEFFPLF1ZLwQ7K5jDn81hve".AsByteArray();
+        public static readonly byte[] adminOntID = "did:cnc:AazEvfQPcQ2GEFFPLF1ZLwQ7K5jDn81hve".AsByteArray();
 
         public static Object Main(string operation,object[] args)
         {

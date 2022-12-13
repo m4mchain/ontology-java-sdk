@@ -20,7 +20,7 @@ public class SwapParam {
         Map map = new HashMap<>();
         map.put("sideChainId", sideChainId);
         map.put("address", address.toBase58());
-        map.put("ongXAccount",ongXAccount);
+        map.put("ccgXAccount",ongXAccount);
         return JSON.toJSONString(map);
     }
 }

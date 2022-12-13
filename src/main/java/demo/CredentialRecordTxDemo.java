@@ -26,8 +26,8 @@ public class CredentialRecordTxDemo {
             com.github.ontio.account.Account payer = ontSdk.getWalletMgr().getAccount(
                     "AUNB7xQuBVg8hnRfVz9pyAuZQUqPBiDxDF", password);
 
-            Identity issuerIdentity = ontSdk.getWalletMgr().getWallet().getIdentity("did:ont:AJ4C9aTYxTGUhEpaZdPjFSqCqzMCqJDRUd");
-            Identity subjectIdentity = ontSdk.getWalletMgr().getWallet().getIdentity("did:ont:AVe4zVZzteo6HoLpdBwpKNtDXLjJBzB9fv");
+            Identity issuerIdentity = ontSdk.getWalletMgr().getWallet().getIdentity("did:cnc:AJ4C9aTYxTGUhEpaZdPjFSqCqzMCqJDRUd");
+            Identity subjectIdentity = ontSdk.getWalletMgr().getWallet().getIdentity("did:cnc:AVe4zVZzteo6HoLpdBwpKNtDXLjJBzB9fv");
 //            String txhash = ontSdk.nativevm().ontId().sendRegister(issuerIdentity.ontid, payer, payer, 20000000, 500);
 //            showEvent(ontSdk, "sendRegister", txhash);
 //            txhash = ontSdk.nativevm().ontId().sendRegister(subjectIdentity.ontid, payer, payer, 20000000, 500);

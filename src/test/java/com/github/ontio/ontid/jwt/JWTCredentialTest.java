@@ -82,18 +82,18 @@ public class JWTCredentialTest extends TestCase {
                     "]," +
                     "\"id\":\"urn:uuid:2801ef05-0c55-45d8-83a3-dc79e3d055bd\"," +
                     "\"type\":[\"VerifiableCredential\",\"RelationshipCredential\"]," +
-                    "\"issuer\":\"did:ont:AJ4C9aTYxTGUhEpaZdPjFSqCqzMCqJDRUd\"," +
+                    "\"issuer\":\"did:cnc:AJ4C9aTYxTGUhEpaZdPjFSqCqzMCqJDRUd\"," +
                     "\"issuanceDate\":\"2020-06-23T13:55:46Z\"," +
                     "\"expirationDate\":\"2020-06-24T13:55:46Z\"," +
                     "\"credentialSubject\":[" +
-                    "{\"id\":\"did:ont:111111\",\"name\":\"Bob\",\"spouse\":\"Alice\"}" +
+                    "{\"id\":\"did:cnc:111111\",\"name\":\"Bob\",\"spouse\":\"Alice\"}" +
                     "]," +
                     "\"credentialStatus\":{" +
                     "\"id\":\"52df370680de17bc5d4262c446f102a0ee0d6312\",\"type\":\"AttestContract\"" +
                     "}," +
                     "\"proof\":{\"type\":\"EcdsaSecp256r1VerificationKey2019\",\"created\":\"2020-06-23T13:55:46Z\"," +
                     "\"proofPurpose\":\"assertionMethod\"," +
-                    "\"verificationMethod\":\"did:ont:AJ4C9aTYxTGUhEpaZdPjFSqCqzMCqJDRUd#keys-2\"," +
+                    "\"verificationMethod\":\"did:cnc:AJ4C9aTYxTGUhEpaZdPjFSqCqzMCqJDRUd#keys-2\"," +
                     "\"hex\":\"015d1fa53d44fc035f7ee3b5637024c67bfc1d253cf11caac38e118650454c5123848aff04589694de" +
                     "ed1e3e08efa863d377d054c20392370b38aa879918fb0690\"}}";
             VerifiableCredential credential = JSON.parseObject(jsonCredential, VerifiableCredential.class);

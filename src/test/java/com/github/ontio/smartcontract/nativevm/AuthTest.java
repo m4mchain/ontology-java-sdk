@@ -114,7 +114,7 @@ public class AuthTest {
         Object obj = sdk.neovm().sendTransaction(Helper.reverse(codeAddress),account,account,sdk.DEFAULT_GAS_LIMIT,0,function,true);
         String res = ((JSONObject)obj).getString("Result");
         String aa = new String(Helper.hexToBytes(res));
-        assertTrue("did:ont:AazEvfQPcQ2GEFFPLF1ZLwQ7K5jDn81hve".equals(aa));
+        assertTrue("did:cnc:AazEvfQPcQ2GEFFPLF1ZLwQ7K5jDn81hve".equals(aa));
     }
 
 
